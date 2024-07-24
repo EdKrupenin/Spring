@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/course
+    username: postgres
+    password: 123456
+
+flyway:
+  url: jdbc:postgresql://localhost:5432/course
+  user: postgres
+  password: 123456
+  enabled: true
+  locations:
+    - 'classpath:db/migration'
